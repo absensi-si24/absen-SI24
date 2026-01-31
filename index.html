@@ -1174,53 +1174,53 @@
     <script>
         // Data mata kuliah semester 4
         const courses = [
-            { code: "SI401", name: "Pemrograman Web", sks: 3, lecturer: "Dr. Ahmad Yani, M.Kom", schedule: "Senin, 08:00-10:30" },
-            { code: "SI402", name: "Basis Data Lanjutan", sks: 3, lecturer: "Maya Sari, M.T.I", schedule: "Senin, 13:00-15:30" },
-            { code: "SI403", name: "Sistem Informasi Manajemen", sks: 3, lecturer: "Prof. Dr. Bambang Sudarto", schedule: "Selasa, 08:00-10:30" },
-            { code: "SI404", name: "Analisis dan Desain Sistem", sks: 3, lecturer: "Rina Dewi, M.Kom", schedule: "Selasa, 13:00-15:30" },
-            { code: "SI405", name: "Jaringan Komputer", sks: 3, lecturer: "Dedi Susanto, M.T", schedule: "Rabu, 08:00-10:30" },
-            { code: "SI406", name: "Interaksi Manusia Komputer", sks: 2, lecturer: "Siti Fatimah, M.Kom", schedule: "Rabu, 10:30-12:10" },
-            { code: "SI407", name: "Statistika dan Probabilitas", sks: 3, lecturer: "Dr. Rudi Hermawan, M.Si", schedule: "Kamis, 08:00-10:30" },
-            { code: "SI408", name: "Keamanan Sistem Informasi", sks: 2, lecturer: "Irfan Setiawan, M.T", schedule: "Kamis, 13:00-14:40" },
-            { code: "SI409", name: "Kewirausahaan Teknologi", sks: 2, lecturer: "Hendra Pratama, M.M", schedule: "Jumat, 08:00-09:40" }
+            { code: "SIBB234308", name: "Metode Penelitian", sks: 3, lecturer: "Muliati Badaruddin, S.Kom, Mt", schedule: "Selasa,12:00:00" },
+            { code: "SIKK234206", name: "Jaringan Komputer", sks: 2, lecturer: "Sarlis Mooduto, S.Kom, M.kom", schedule: "Selasa,14:00:00" },
+            { code: "SIKK234303", name: "Startup Digital", sks: 3, lecturer: "Zufrianto Dunggio, S.Si., M.Kom", schedule: "Rabu,10:00:00" },
+            { code: "SIKB234201", name: "Matematika Diskrit", sks: 2, lecturer: "Ir. Misrawati Apriyana Puspa, M.kom", schedule: "Kamis,14:00:00" },
+            { code: "SIKK234304", name: "Sistem Informasi Geografis", sks: 3, lecturer: "Zufrianto Dunggio, S.Si., M.Kom", schedule: "Kamis,10:00:00" },
+            { code: "SIPB234307", name: "Analisa Dan Perancangan Sistem II", sks: 3, lecturer: "Fitriyanti Suleman, S.Si., M.Kom", schedule: "Jumat,10:00:00" },
+            { code: "SIKK234305", name: "Pemograman Berorientasi Objek III", sks: 3, lecturer: "Syaifuddin, S.Kom, M.Kom", schedule: "Sabtu,10:00:00" },
+            { code: "SIKB234302", name: "Sistem Informasi Manajemen", sks: 3, lecturer: "Olha Musa, S.Kom, M.Kom", schedule: "Sabtu,14:00:00" },
+            { code: "SIKK236203", name: "perangkat Keras", sks: 2, lecturer: "Rusni Harun, S.Kom, M.Kom", schedule: "Sabtu,14:00:00" }
         ];
 
         // Data mahasiswa (30 reguler + 2 karyawan)
         let students = JSON.parse(localStorage.getItem('studentsData')) || [
             // 30 mahasiswa reguler
-            { nim: "2021001", name: "Ahmad Fauzi", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021002", name: "Budi Santoso", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021003", name: "Cindy Nurhaliza", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021004", name: "Dedi Setiawan", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021005", name: "Eka Putri", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021006", name: "Fajar Ramadan", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021007", name: "Gita Maharani", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021008", name: "Hendra Pratama", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021009", name: "Indah Permata", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021010", name: "Joko Susilo", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021011", name: "Kartika Sari", class: "B", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021012", name: "Lukman Hakim", class: "B", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021013", name: "Maya Indah", class: "B", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021014", name: "Nugroho Adi", class: "B", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021015", name: "Oki Setiawan", class: "B", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021016", name: "Putri Ayu", class: "B", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021017", name: "Rizki Amelia", class: "B", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021018", name: "Sandi Pratama", class: "B", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021019", name: "Tuti Handayani", class: "B", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021020", name: "Umar Said", class: "B", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021021", name: "Vina Melinda", class: "C", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021022", name: "Wahyu Ramadhan", class: "C", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021023", name: "Yuni Sartika", class: "C", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021024", name: "Zainal Abidin", class: "C", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021025", name: "Andi Permana", class: "C", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021026", name: "Bunga Citra", class: "C", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021027", name: "Chandra Wijaya", class: "C", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021028", name: "Dewi Lestari", class: "C", gender: "P", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021029", name: "Eko Prasetyo", class: "C", gender: "L", category: "Reguler", password: "mahasiswa123" },
-            { nim: "2021030", name: "Fitriani", class: "C", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124020", name: "Tri Annisa Angelia Tama", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124021", name: "Sry Agustiani Kapang", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124022", name: "Putri Monoarfa", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124023", name: "Desriyani Ganie", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124024", name: "Zahraini Radji", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124025", name: "Sri Meylan Yahiku", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124027", name: "Adelin Injara", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124028", name: "Mertin Giu", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124029", name: "Anisa Karim", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124030", name: "Fina Ayuko", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124031", name: "Wartin Husain", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124032", name: "Elistyawati Yunus", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124034", name: "Olivia Harun", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124036", name: "Ananda Septiani Abdullah", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124037", name: "Avrilia Nurdin", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124038", name: "Eka Wahyuwanyo Ahmad", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124040", name: "Aprisal", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124042", name: "Sofyawati Karim", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124039", name: "Aryanto R. Nau", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124044", name: "Nazwa Helingo", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124045", name: "Fadel Saputra A. Bakari", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124046", name: "Aisa Karim", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124047", name: "Indriyani Amir", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124048", name: "Haikal Kasim", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124049", name: "Riska Karim", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124050", name: "Moh Aditya Dunggio", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124051", name: "Alifa Rayan Saloewa", class: "A", gender: "P", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124052", name: "Syandy Prawira Ano", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124054", name: "Ronaldi Rahman", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
+            { nim: "F401124053", name: "Rahmat Ismail", class: "A", gender: "L", category: "Reguler", password: "mahasiswa123" },
             // 2 mahasiswa karyawan
-            { nim: "2021031", name: "Gilang Ramadhan", class: "K", gender: "L", category: "Karyawan", password: "mahasiswa123" },
-            { nim: "2021032", name: "Hana Safitri", class: "K", gender: "P", category: "Karyawan", password: "mahasiswa123" }
+            { nim: "F401124033", name: "Hasmiyati Atima", class: "A", gender: "P", category: "Karyawan", password: "mahasiswa123" },
+            { nim: "F401124035", name: "Misran Suaib", class: "A", gender: "L", category: "Karyawan", password: "mahasiswa123" }
         ];
 
         // Data absensi contoh
@@ -1230,7 +1230,7 @@
         if (attendanceData.length === 0) {
             // Generate data absensi contoh untuk 7 hari terakhir
             const today = new Date();
-            const courseNames = ["Pemrograman Web", "Basis Data Lanjutan", "Sistem Informasi Manajemen"];
+            const courseNames = ["Metode Penelitian", "Jaringan Komputer", "Startup Digital"];
             const statuses = ["Hadir", "Izin", "Sakit", "Alpha"];
             
             for (let i = 0; i < 20; i++) {
